@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+        {% if winner == None %}
+            <h1>You have tied, play again by clicking the link below!</h1>
+            <p>
+                <a href="/play">Try again</a>
+            </p>
+
+        {% else %}
+            <h1>{{ winner }} picked {{ winner_choice }}</h1>
+            <h2> {{ winner }} wins!</h2>
+                <p>
+                    <a href="/play">Play again</a>
+                </p>
+        {% endif %}
+
+{% endblock %}

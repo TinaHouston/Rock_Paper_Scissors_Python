@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1 class="h1-writing">Let's play Rock, Paper, Scissors!</h1>
+    <h2>Rules of the game:</h2>
+    <div>
+        <ol>
+            <li>Player 1, type your choice into the browser. Pick either rock, paper, or scissors. For example if you want to play "rock" you should type /rock</li>
+            <li>Player 2, follow the same steps as above but put your answer after player 1. For example, if player 1 picks "rock" and player 2 picks "scissors", you should type /rock/scissors</li>
+            <li>Let the computer tell you who wins!</li>
+            <li>Want to play again? Repeat the steps above.</li>
+        </ol>
+        <h4>Can't be bothered typing? Player 1 can choose your answer using the links below:</h4>
+        <p>
+            <ul>
+                <li><a href="/rock">Rock</a></li>
+                <li><a href="/paper">Paper</a></li>
+                <li><a href="/scissors">Scissors</a></li>
+            </ul>
+        </p>
+    </div>
+
+{% endblock %}
